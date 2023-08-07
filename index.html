@@ -6,28 +6,43 @@
 <link rel="icon" href="./HousePhotos/BookMarkPhoto.jpg" type="image/jpg">
 <link rel="stylesheet" href="style1.css">
 </head>
-<body>
 
-<div id="MasterMenuDiv">
-<div id="menuContainer">
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+
+<body>
+ <div class="container">
+  <div class="grid-item-1">
+    <div class="overlay" id="myNav" >
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Gallery</a>
+        <a href="#">Facilities</a>
+        <a href="#">Location</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="MenuSymbol">
+      <span id="PopUpMenuSpan" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
     </div>
   </div>
-  <div class="MenuSymbol">
-    <span id="PopUpMenuSpan" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-  </div>
-  <div class="MenuNameofProperty">
+  <div class="grid-item-2">
     <h1>Niaros' House</h1>
   </div>
+  <div class="MainPagePhoto">
+    <img id= "FrontPage1stPhoto" style='height: 100%; width: 100%; object-fit: contain' src="./HousePhotos/LivingRoom.jpg" alt="LivingRoom">
+  </div>
+  <div class="IntroPageWelcomeWords">
+    <h2>
+      Niaros' House, Zakynthos
+    </h2>
+    <p>Cozy apartment in Lagadakia village which is located 8km from the island’s capital city, Zakynthos Town.</p>
+    <p>Being located in Zakynthos countryside, in the heart of the island enables you to have quick and easy access to all the popular parts of the island as well as being close to nature.</p>
+    <p>The apartment is suitable for families, couples or groups of friends seeking luxury accommodation in a peaceful and relaxing area.</p>
+  </div>
+  <div class="MainPagePhoto2">
+    <img id="FrontPage2ndPhoto" style='height: 100%; width: 100%; object-fit: contain' src="./HousePhotos/LivingRoom.jpg" alt="MasterBedRoom">
+  </div>
 </div>
-</div>
-
+   
 <script>
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -39,4 +54,10 @@ function closeNav() {
 </script>
      
 </body>
+
+<footer>
+  <p>&copy Copyright <script>document.write( new Date().getFullYear() );</script> Niaros' House Zakynthos. All Rights Reserved</p>
+  <p>Hosted By Georgios Varvarigos</p>
+  <a href="#" class="top">Back to top</a>
+</footer>
 </html>
